@@ -1,18 +1,10 @@
-title: Advanced Haskell template
-
-# Table of content
+title: Haskell Project
 plan:
-  - title: Welcome # Set the page title
-    statement: markdowns/welcome.md # Set the file path to the page content
-#  - title: Another Page
-#    statement: markdowns/another-page.md
-
-
-# Settings for your programming projects and the associated Docker images
+- title: Welcome
+  statement: markdowns/welcome.md
 projects:
   haskell:
-    root: /haskell-project # Set the root path to your Haskell project
-
-    # Set the docker image. This image runs tests using this syntax:
-    # @[Code Editor Title]({"stubs": ["editor_file1.hs", "editor_file2.hs", ...], "command": "runhaskell test_file.hs"})
-    runner: haskell:8
+    root: /haskell-project
+    runner:
+      name: haskell
+      version: '8'
